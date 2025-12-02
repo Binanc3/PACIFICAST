@@ -1,0 +1,18 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjEzMzcsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg...",
+    "payload": "eyJkb21haW4iOiJwYWNpZmljYXN0LnZlcmNlbC5hcHAifQ",
+    "signature": "MHhm..."
+  },
+  "frame": {
+    "version": "1",
+    "name": "PacifiCast",
+    "iconUrl": "https://pacificast.vercel.app/icon.png",
+    "homeUrl": "https://pacificast.vercel.app",
+    "imageUrl": "https://pacificast.vercel.app/splash.png",
+    "buttonTitle": "Trade & Earn",
+    "splashImageUrl": "https://pacificast.vercel.app/splash.png",
+    "splashBackgroundColor": "#050C1B",
+    "webhookUrl": "https://pacificast.vercel.app/api/webhook"
+  }
+}

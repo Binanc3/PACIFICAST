@@ -1,18 +1,21 @@
 {
   "compilerOptions": {
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+
     "target": "ES2023",
     "lib": ["ES2023"],
     "module": "ESNext",
-    "types": ["node"],
-    "skipLibCheck": true,
 
-    /* Bundler mode */
+    /* Enable Node.js built-in types */
+    "types": ["node"],
     "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+
+    "skipLibCheck": true,
+    "noEmit": true,
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "noEmit": true,
 
     /* Linting */
     "strict": true,
@@ -22,5 +25,9 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["vite.config.ts"]
+
+  "include": [
+    "vite.config.ts",
+    "pacificast/api/**/*.ts"    // ← YOUR SERVER FILES (THIS FIXES THE ERRORS)
+  ]
 }
